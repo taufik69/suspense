@@ -7,14 +7,13 @@ const WrapPromise = (promise) => {
       setTimeout(() => {
         status = "success";
         response = res;
-      }, 3000);
+      }, 1000);
     })
     .catch((err) => {
       status = "error";
       response = err;
     });
 
-  console.log(suspender);
   const read = () => {
     switch (status) {
       case "pending":
