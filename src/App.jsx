@@ -9,13 +9,13 @@ function App() {
   };
   return (
     <div>
-      <ErrorBoundary fallback={"Error khaicos vai postSelector "}>
+      <ErrorBoundary fallback={<h1>Error khaicos vai postSelector</h1>}>
         <Suspense fallback={"loading ..."}>
           <PostSelector onPost={handlePost} />
         </Suspense>
       </ErrorBoundary>
 
-      <ErrorBoundary fallback={"Error perform in Comment"}>
+      <ErrorBoundary fallback={<h1>Error perform in Comment</h1>}>
         <Suspense fallback={"comments loading ....."}>
           <Comments postId={postId} />
         </Suspense>

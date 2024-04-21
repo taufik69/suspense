@@ -3,7 +3,7 @@ import React from "react";
 import fetchPost from "../api/fetcher";
 
 const resouces = fetchPost(
-  "https://jsonplaceholder.typicode.com/post?_limit=5"
+  "https://jsonplaceholder.typicode.com/posts?_limit=5"
 );
 
 const PostSelector = ({ onPost }) => {
